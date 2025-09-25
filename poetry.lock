@@ -317,6 +317,29 @@ files = [
 ]
 
 [[package]]
+name = "beautifulsoup4"
+version = "4.13.5"
+description = "Screen-scraping library"
+optional = false
+python-versions = ">=3.7.0"
+groups = ["main"]
+files = [
+    {file = "beautifulsoup4-4.13.5-py3-none-any.whl", hash = "sha256:642085eaa22233aceadff9c69651bc51e8bf3f874fb6d7104ece2beb24b47c4a"},
+    {file = "beautifulsoup4-4.13.5.tar.gz", hash = "sha256:5e70131382930e7c3de33450a2f54a63d5e4b19386eab43a5b34d594268f3695"},
+]
+
+[package.dependencies]
+soupsieve = ">1.2"
+typing-extensions = ">=4.0.0"
+
+[package.extras]
+cchardet = ["cchardet"]
+chardet = ["chardet"]
+charset-normalizer = ["charset-normalizer"]
+html5lib = ["html5lib"]
+lxml = ["lxml"]
+
+[[package]]
 name = "brotli"
 version = "1.1.0"
 description = "Python bindings for the Brotli compression library"
@@ -783,6 +806,18 @@ groups = ["main"]
 files = [
     {file = "distro-1.9.0-py3-none-any.whl", hash = "sha256:7bffd925d65168f85027d8da9af6bddab658135b840670a223589bc0c8ef02b2"},
     {file = "distro-1.9.0.tar.gz", hash = "sha256:2fa77c6fd8940f116ee1d6b94a2f90b13b5ea8d019b98bc8bafdcabcdd9bdbed"},
+]
+
+[[package]]
+name = "docx2txt"
+version = "0.9"
+description = "A pure python-based utility to extract text and images from docx files."
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "docx2txt-0.9-py3-none-any.whl", hash = "sha256:e3718c0653fd6f2fcf4b51b02a61452ad1c38a4c163bcf0a6fd9486cd38f529a"},
+    {file = "docx2txt-0.9.tar.gz", hash = "sha256:18013f6229b14909028b19aa7bf4f8f3d6e4632d7b089ab29f7f0a4d1f660e28"},
 ]
 
 [[package]]
@@ -1271,6 +1306,23 @@ huggingface-hub = ">=0.19.3"
 packaging = "*"
 typing-extensions = ">=4.0,<5.0"
 websockets = ">=10.0,<16.0"
+
+[[package]]
+name = "gradio-pdf"
+version = "0.0.22"
+description = "Easily display PDFs in Gradio"
+optional = false
+python-versions = ">=3.8"
+groups = ["main"]
+files = [
+    {file = "gradio_pdf-0.0.22-py3-none-any.whl", hash = "sha256:6f710eca3464d2d37aee742eb2f10dbe76772ebe5dfcfb993da40c710c9ad1b5"},
+]
+
+[package.dependencies]
+gradio = ">=4.0,<6.0"
+
+[package.extras]
+dev = ["build", "twine"]
 
 [[package]]
 name = "greenlet"
@@ -4960,6 +5012,18 @@ files = [
 ]
 
 [[package]]
+name = "soupsieve"
+version = "2.8"
+description = "A modern CSS selector implementation for Beautiful Soup."
+optional = false
+python-versions = ">=3.9"
+groups = ["main"]
+files = [
+    {file = "soupsieve-2.8-py3-none-any.whl", hash = "sha256:0cc76456a30e20f5d7f2e14a98a4ae2ee4e5abdc7c5ea0aafe795f344bc7984c"},
+    {file = "soupsieve-2.8.tar.gz", hash = "sha256:e2dd4a40a628cb5f28f6d4b0db8800b8f581b65bb380b97de22ba5ca8d72572f"},
+]
+
+[[package]]
 name = "sqlalchemy"
 version = "2.0.43"
 description = "Database Abstraction Library"
@@ -5861,6 +5925,21 @@ files = [
 ]
 
 [[package]]
+name = "wikipedia"
+version = "1.4.0"
+description = "Wikipedia API for Python"
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "wikipedia-1.4.0.tar.gz", hash = "sha256:db0fad1829fdd441b1852306e9856398204dc0786d2996dd2e0c8bb8e26133b2"},
+]
+
+[package.dependencies]
+beautifulsoup4 = "*"
+requests = ">=2.0.0,<3.0.0"
+
+[[package]]
 name = "xxhash"
 version = "3.5.0"
 description = "Python binding for xxHash"
@@ -6247,4 +6326,4 @@ cffi = ["cffi (>=1.17,<2.0) ; platform_python_implementation != \"PyPy\" and pyt
 [metadata]
 lock-version = "2.1"
 python-versions = "<3.15,>=3.10"
-content-hash = "386680dc9504493cf6a0d6868be097ea9cf28cf209aec32f8964efa12c3e027f"
+content-hash = "e19242adab5a6578e16a4e901ceeed960d6a08e95240d47014d2eb932995c5c4"
